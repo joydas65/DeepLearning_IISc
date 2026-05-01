@@ -66,3 +66,84 @@
 - Cost
 - Deployment
 - Monitoring
+
+# Week 1 Final Revision: GenAI Basics
+
+## Predictive AI vs Generative AI
+
+Predictive AI predicts labels, values, or decisions from input data.
+
+Examples:
+- Spam detection
+- Fraud detection
+- Sales forecasting
+- House price prediction
+
+Generative AI creates new content.
+
+Examples:
+- Text generation
+- Code generation
+- Image generation
+- Summarization
+- Chatbots
+
+Key difference:
+Predictive AI predicts; Generative AI generates.
+
+---
+
+## GenAI Pipeline
+
+Problem definition  
+→ data/knowledge source  
+→ preprocessing  
+→ prompt/RAG/fine-tuning  
+→ model inference  
+→ evaluation  
+→ deployment  
+→ monitoring
+
+Important:
+A GenAI system is not only an LLM call. Evaluation, deployment, and monitoring are part of the complete system.
+
+---
+
+## RAG
+
+RAG = Retrieval-Augmented Generation.
+
+Flow:
+User query  
+→ retrieve relevant document chunks  
+→ give retrieved context to LLM  
+→ generate grounded answer
+
+RAG is useful for:
+- private company data
+- frequently changing data
+- reducing hallucination
+- source-grounded answers
+
+RAG does not update model weights.
+
+---
+
+## Hallucination
+
+Hallucination means the model gives a fluent but incorrect, fabricated, or unsupported answer.
+
+Causes:
+- missing context
+- poor retrieval
+- outdated knowledge
+- ambiguous question
+- high randomness
+
+Ways to reduce:
+- RAG
+- source citation
+- better prompting
+- low temperature
+- evaluation
+- human review
